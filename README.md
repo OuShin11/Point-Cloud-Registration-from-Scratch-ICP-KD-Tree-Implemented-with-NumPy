@@ -48,8 +48,8 @@ Partial scans with limited overlapping regions.
 |------|---------------|
 | Initial | ![Initial clouds](/results/Initial.png) |
 | PCA | ![PCA](/results/PCA.png) |
-| Stage 1 ICP | ![Stage 1 ICP](/results/"ICP stage1.png") |
-| Stage 2 ICP | (image) |  
+| Stage 1 ICP | ![Stage 1 ICP](/results/ICP_stage1.png) |
+| Stage 2 ICP | ![Stage 2 ICP](/results/ICP_stage2.png)) |  
 | Final Alignment(Full clouds) | ![Final Alignment](/results/final_alignment.png) |
 
 > Overlapping regions (back/head) align well.  
