@@ -9,6 +9,11 @@ Implementing a high-performance point cloud registration pipeline using Python a
 - Supports 600k+ points with optimized memory usage
 - Trimmed ICP for robustness against noise and outliers
 
+## 🧠Professional Statements
+This repository demonstrates the same pipeline I developed during an internship,
+where I achieved efficient registration of 600k+ point clouds.
+Due to NDA/Confidentiality, the original dataset cannot be included here.
+
 ## 📈 Performance
 | Method | Runtime | Speedup |
 |--------|---------|---------|
