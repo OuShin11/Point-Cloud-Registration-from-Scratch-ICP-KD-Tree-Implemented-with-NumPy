@@ -95,7 +95,7 @@ Stanford 3D Scanning Repository (Bunny dataset)
 
 ## 👤 Author
 Chen Wang
-Applied Mathematics & Modeling @ Meiji University
-Interested in Data Science, and Computational Geometry
+Applied Mathematics & Modeling @ Meiji University  
+Interested in Data Science, and Computational Geometry  
 LinkedIn: www.linkedin.com/in/chen-wang-83148b354
 
