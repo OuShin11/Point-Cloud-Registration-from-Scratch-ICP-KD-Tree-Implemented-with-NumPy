@@ -1,5 +1,3 @@
-# Point-Cloud-Registration-from-Scratch-ICP-KD-Tree-Implemented-with-NumPy
-
 # Point Cloud Registration with ICP and KD-Tree from Scratch
 
 ## 🔍 Overview
