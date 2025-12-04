@@ -47,10 +47,10 @@ Partial scans with limited overlapping regions.
 | Stage | Visualization |
 |------|---------------|
 | Initial | ![Initial clouds](/results/Initial.png) |
-| PCA | (image) |
-| Stage 1 ICP | (image) |
+| PCA | ![PCA](/result/PCA.png) |
+| Stage 1 ICP | ![Stage 1 ICP](/result/ICPstage1.png) |
 | Stage 2 ICP | (image) |  
-| Final Alignment(Full clouds) | (image) |
+| Final Alignment(Full clouds) | ![Final Alignment](/result/final_alignment.png) |
 
 > Overlapping regions (back/head) align well.  
 > Non-overlapping areas remain offset, which is expected in practical scanning scenarios.
