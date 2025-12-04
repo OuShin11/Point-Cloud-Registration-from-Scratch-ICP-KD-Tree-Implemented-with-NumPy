@@ -64,10 +64,10 @@ Partial scans with limited overlapping regions.
 3. Compute optimal rotation & translation using SVD
 4. Iterate until convergence
 
-Formula:
-$$\[ 
+Formula:  
+$$\ 
 R, t = \arg\min_{R,t} \sum_i \| R p_i + t - q_i \|^2 
-\]$$
+\$$
 
 ---
 
