@@ -79,6 +79,7 @@ Reduces search complexity from **O(N²)** to **O(N log N)**.
 ---
 ## 📌 Performance Notes
 Original internship work used large-scale indoor scans:
-｜Dataset	｜Points	｜Method	｜Result
-｜Confidential project	｜ 600k+	｜ KD-Tree ICP	｜✔ Successful
-｜Stanford Bunny	｜~30k	｜KD-Tree ICP	｜Demo included
+｜Dataset	｜Points	｜Method	｜Result ｜
+｜------｜-----｜-----｜-----｜
+｜Confidential project	｜ 600k+	｜ KD-Tree ICP	｜✔ Successful ｜
+｜Stanford Bunny	｜~30k	｜KD-Tree ICP	｜Demo included｜
