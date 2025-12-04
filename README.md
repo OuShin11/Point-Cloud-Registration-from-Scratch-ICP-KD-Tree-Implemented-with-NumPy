@@ -1,26 +1,104 @@
-# Point Cloud Registration with ICP and KD-Tree from Scratch
+# Point Cloud Registration with ICP and KD-Tree from Scratch (NumPy Only)
 
-## 🔍 Overview
-Implementing a high-performance point cloud registration pipeline using Python and NumPy.
+High-performance point cloud registration pipeline fully implemented from scratch using NumPy.  
+Demonstrated on both synthetic rigid-transformed data and real multi-view scans of the Stanford Bunny.
+
+This project is based on the algorithmic work completed during an engineering internship,  
+where I handled **600k+ point clouds**.  
+Due to confidentiality, the original dataset is not included here.
+
+---
 
 ## 🚀 Features
-- Efficient k-nearest neighbor search using KD-Tree
-- SVD-based ICP for rigid transformation
-- Supports 600k+ points with optimized memory usage
-- Trimmed ICP for robustness against noise and outliers
 
-## 📈 Performance
-| Method | Runtime | Speedup |
-|--------|---------|---------|
-| Naive nearest neighbor | 〇〇 s | 1x |
-| KD-Tree accelerated ICP | 〇〇 s | ⭐~x faster |
+- ICP (Iterative Closest Point) implemented from scratch
+- KD-Tree accelerated nearest-neighbor search — **O(N log N)**
+- Works on **large-scale point clouds (600k+)**
+- PCA-based initial alignment for partial overlap cases
+- Supports multi-view scan registration
+- Visualization for evaluation: before/after alignment, error plots
 
-## 📊 Visual Results
+---
 
+## 📂 Project Structure
+src/ # Core implementations (ICP, KD-Tree, utilities) 
+data/ # Public sample dataset (Stanford Bunny) 
+results/ # Visualization images/GIFs 
+README.md
 
-## 🧠 Algorithms
-- KD-Tree construction: …(简述)
-- ICP with SVD: …(简述)
+## 📊 Results
 
-## 🛠 Tech
-Python / NumPy / Matplotlib
+### Synthetic Rigid Transformation
+Recovering known rotation and translation applied to a single point cloud.
+
+| Stage | Visualization |
+|------|---------------|
+| Initial | (image) |
+| After ICP | (image) |
+| Error curve | (image) |
+
+✨ ICP converges correctly and restores the ground-truth motion.
+
+---
+
+### Real Multi-View Scans (bun000 ↔ bun045)
+Partial scans with limited overlapping regions.
+
+| Stage | Visualization |
+|------|---------------|
+| Initial | (image) |
+| PCA | (image) |
+| Stage 1 ICP | (image) |
+| Stage 2 ICP | (image) |
+
+> Overlapping regions (back/head) align well.  
+> Non-overlapping areas remain offset, which is expected in practical scanning scenarios.
+
+---
+
+## 🔧 Algorithms
+
+### ICP – SVD-based Rigid Registration
+
+1. Nearest-neighbor correspondence (KD-Tree)
+2. Reject far correspondences (optional trimming)
+3. Compute optimal rotation & translation using SVD
+4. Iterate until convergence
+
+Formula:  
+$$\ 
+R, t = \arg\min_{R,t} \sum_i \| R p_i + t - q_i \|^2 
+\$$
+
+---
+
+### KD-Tree – Efficient Nearest Neighbor Search
+Reduces search complexity from **O(N²)** to **O(N log N)**.
+
+> Implemented with index permutation and median splitting for memory locality.
+
+---
+## 📌 Performance Notes
+Original internship work used large-scale indoor scans:
+| Dataset | Points | Method | Result |
+|--------|-------:|--------|--------|
+| Confidential project | 600k+ | KD-Tree ICP | ✔ Successful |
+| Stanford Bunny | ~30k | KD-Tree ICP | Demo included |
+
+---
+## 🧠 Discussions & Future Work
+- Robust ICP (trimmed / weighted correspondences)
+- Multi-scan global graph optimization
+- Surface reconstruction after alignment
+
+---
+## 📚 References
+Stanford 3D Scanning Repository (Bunny dataset)
+
+---
+## 👤 Author
+Chen Wang  
+Applied Mathematics & Modeling @ Meiji University  
+Interested in Data Science, and Computational Geometry  
+LinkedIn: www.linkedin.com/in/chen-wang-83148b354
+
