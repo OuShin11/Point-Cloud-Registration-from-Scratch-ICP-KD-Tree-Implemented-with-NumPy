@@ -85,3 +85,17 @@ Original internship work used large-scale indoor scans:
 | Stanford Bunny | ~30k | KD-Tree ICP | Demo included |
 
 
+## 🧠 Discussions & Future Work
+- Robust ICP (trimmed / weighted correspondences)
+- Multi-scan global graph optimization
+- Surface reconstruction after alignment
+
+## 📚 References
+Stanford 3D Scanning Repository (Bunny dataset)
+
+## 👤 Author
+Chen Wang
+Applied Mathematics & Modeling @ Meiji University
+Interested in Data Science, and Computational Geometry
+LinkedIn: www.linkedin.com/in/chen-wang-83148b354
+
