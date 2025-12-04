@@ -46,7 +46,8 @@ Partial scans with limited overlapping regions.
 
 | Stage | Visualization |
 |------|---------------|
-| Initial (PCA) | (image) |
+| Initial | (image) |
+| PCA | (image) |
 | Stage 1 ICP | (image) |
 | Stage 2 ICP | (image) |
 
