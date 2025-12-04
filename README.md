@@ -84,3 +84,4 @@ Original internship work used large-scale indoor scans:
 | Confidential project | 600k+ | KD-Tree ICP | ✔ Successful |
 | Stanford Bunny | ~30k | KD-Tree ICP | Demo included |
 
+
