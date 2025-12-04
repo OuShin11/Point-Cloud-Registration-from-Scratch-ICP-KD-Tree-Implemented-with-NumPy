@@ -65,9 +65,9 @@ Partial scans with limited overlapping regions.
 4. Iterate until convergence
 
 Formula:
-\[ 
+$$\[ 
 R, t = \arg\min_{R,t} \sum_i \| R p_i + t - q_i \|^2 
-\]
+\]$$
 
 ---
 
