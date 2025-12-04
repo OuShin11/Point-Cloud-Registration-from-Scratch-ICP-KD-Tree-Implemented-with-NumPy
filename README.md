@@ -21,9 +21,9 @@ Due to confidentiality, the original dataset is not included here.
 ---
 
 ## 📂 Project Structure
-src/ # Core implementations (ICP, KD-Tree, utilities)
-data/ # Public sample dataset (Stanford Bunny)
-results/ # Visualization images/GIFs
+src/ # Core implementations (ICP, KD-Tree, utilities) 
+data/ # Public sample dataset (Stanford Bunny) 
+results/ # Visualization images/GIFs 
 README.md
 
 ## 📊 Results
