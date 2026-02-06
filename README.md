@@ -28,18 +28,6 @@ README.md
 
 ## 📊 Results
 
-### Synthetic Rigid Transformation
-Recovering known rotation and translation applied to a single point cloud.
-
-| Stage | Visualization |
-|------|---------------|
-| Initial | (image) |
-| After ICP | (image) |
-| Error curve | (image) |
-
-✨ ICP converges correctly and restores the ground-truth motion.
-
----
 
 ### Real Multi-View Scans (bun000 ↔ bun045)
 Partial scans with limited overlapping regions.
